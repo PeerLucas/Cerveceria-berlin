@@ -1,0 +1,84 @@
+@import"../base/variables";
+/*-----CERVEZAS-----*/
+
+.maincerveza {
+    background-color: $color-fondo;
+
+    .h1cervezas {
+        background-color: $color-fondo;
+        color: $color-titulos;
+        padding: 4%;
+        text-align: center;
+        font-size: 40px;
+        font-family: $font;
+    }
+}
+
+.h2cervezas {
+    font-size: 20px;
+    text-align: center;
+    font-family: $font;
+    color: $color-titulos;
+    background-color: $color-fondo;
+    padding: 2%;
+}
+
+.estiloscervezas {
+    @include flex(flex, space-around, center, center);
+    padding: 3%;
+    background-color: $color-fondo;
+    color: white;
+    animation-name: slidein;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    div img {
+        @include size(100px, 100px);
+        padding: 6%;
+    }
+
+
+}
+
+.tiposcervezas {
+    @include flex(flex, space-evenly, center, justify);
+    background-color: black;
+    color: white;
+
+    div {
+        width: 500px;
+        height: 100%;
+        border: 2px solid whitesmoke;
+        font-family: $font;
+        padding: 3%;
+        margin: 4% 4% 4% 4%;
+
+        h3 {
+            color: $color-titulos;
+            text-align: center;
+        }
+    }
+
+    img {
+        margin: 4%;
+        height: 100%;
+
+    }
+}
+
+.division {
+    @include size(6px, 50%);
+    margin: 5% 25% 5% 25%;
+}

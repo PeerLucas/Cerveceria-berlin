@@ -1,0 +1,24 @@
+
+//!listas
+
+$color-principal:#215130;
+$color-titulos:#FFD700;
+$color-publicidad:#c21919;
+$color-fondo:black;
+
+$font:'Source Sans Pro', sans-serif;
+
+//!mixins
+
+@mixin flex ($flex,$justify,$align,$center) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    text-align: $center;
+    
+}
+
+@mixin size ($height,$widht) {
+    height:$height ;
+    width: $widht;
+}

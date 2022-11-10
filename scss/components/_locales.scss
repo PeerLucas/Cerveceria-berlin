@@ -1,0 +1,41 @@
+/*-----LOCALES-----*/
+
+.mainlocales {
+    background-color: $color-fondo;
+    font-family: $font;
+    padding: 2%;
+    .h1locales {
+        text-align: center;
+        color: $color-titulos;
+        padding-bottom: 4%;
+        font-size: 40px;
+    }
+    .locales {
+        @include flex (flex,space-around,center,center);
+        color: $color-titulos;
+        padding: 4% 0% 4% 0%;
+        .imglocales {
+            @include size (300px,300px);
+            border-radius: 100%;
+        }
+        div {
+            border: 2px solid whitesmoke;
+            padding: 2%;
+            a {
+                color: whitesmoke;
+            }
+            p {
+                margin: 4px;
+            }
+            
+            
+        }
+        iframe {
+            @include size (300px,300px);
+            border-radius: 100%;
+        }
+        
+        
+    }
+    
+}

@@ -1,0 +1,33 @@
+@import"../base/variables";
+
+/*-----CONTACTO-----*/
+
+body {
+    background-color: $color-fondo;
+}
+
+.maincontacto {
+    @include flex (flex,space-around,center,center);
+    width: 100%;
+    background-color: $color-fondo;
+    font-family: $font;
+    .formulariocontacto {
+        color: yellow;
+        margin: .5%;
+        background-color: $color-fondo;
+        #texto {
+            @include size (240px,310px);
+        }
+        #boton {
+            background-color:$color-titulos;
+            padding: .5%;
+            border-radius: 10%;
+        }
+        
+    }
+    .infocontacto {
+        font-size: 19px;
+        background-color: $color-fondo;
+        color: $color-titulos;
+    }
+}

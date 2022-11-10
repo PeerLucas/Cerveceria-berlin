@@ -1,0 +1,189 @@
+/*-----MEDIA QUERIES-----*/
+
+
+@media screen and (max-width:920px) {
+
+    #contenedorhistoria {
+        .nuestrahistoria p {
+            text-align: justify;
+        }
+
+        .grid-contenedor {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 200px;
+            object-fit: cover;
+        }
+    }
+
+    .tiposcervezas div {
+        margin-left: 5%;
+    }
+
+}
+
+@media screen and (max-width:890px) {
+
+    .locales iframe {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+    nav {
+        #check:checked~ul {
+            left: 0;
+        }
+
+        .checkbtn {
+            display: block;
+            margin-right: 30px;
+            font-size: 40px;
+        }
+
+        ul {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #1f492cf6;
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: 1.5s;
+            padding: 0;
+
+            li {
+                display: block;
+
+                a {
+                    font-size: 26px;
+
+                    &:hover,
+                    &.active {
+                        background: none;
+                        color: #FFD700;
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .publicidad {
+        display: none !important;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+
+
+    #contenedorhistorua {
+        .nuestrahistoria p {
+            text-align: justify;
+        }
+    }
+
+    .maincontacto {
+        flex-direction: column;
+        padding: 4%;
+    }
+
+    .formulariocontacto {
+        padding-bottom: 4%;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .tiposcervezas {
+        flex-direction: column;
+        margin: 4%;
+
+    }
+
+    .tiposcervezas img {
+        height: 280px;
+        width: 280px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .mainlocales {
+        .h1locales {
+            padding-top: 3.5%;
+        }
+
+        .locales {
+            flex-direction: column;
+            margin-bottom: 40px;
+
+            .imglocales {
+                height: 280px;
+                width: 260px;
+                border-radius: 0%;
+                margin-bottom: 5%;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:540px) {
+
+    #contenedorhistoria {
+        .nuestrahistoria p {
+            text-align: justify;
+        }
+
+        .grid-contenedor {
+            grid-template-columns: 1fr;
+            grid-auto-rows: 200px;
+            object-fit: cover;
+        }
+    }
+
+    .tiposcervezas div {
+        font-size: 12px;
+        width: 300px !important;
+    }
+}
+
+@media screen and (max-width:500px) {
+    footer {
+        flex-direction: column;
+        height: 95px;
+    }
+
+    footer div a img {
+        height: 50px;
+        width: 50px;
+    }
+
+
+    footer p {
+        display: flex;
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+
+    #contenedorhistoria {
+        .nuestrahistoria {
+            h2 {
+                font-size: 30px;
+            }
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+    .estiloscervezas {
+        flex-direction: column;
+        margin: auto;
+    }
+}
